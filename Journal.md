@@ -26,3 +26,45 @@ For my power I decided to use a buck boost convertor because I'm actually planni
 ### Time Spent: 2.5 Hours
 
 --- 
+
+## 30/12/25
+
+I added circuitry for driving an E-ink display today. For this I mainly referred to a few different websites; some of which are [adafruit](https://cdn-learn.adafruit.com/assets/assets/000/127/535/original/eink___epaper_schem.png?1707320728), [waveshare](https://www.waveshare.com/w/upload/5/57/2.13inch_e-Paper_HAT_Schematic.pdf),[alibaba page](https://www.alibaba.com/product-detail/E-paper-Technology-2-13-Inch_1601018719280.html) (for pinout and information about drivers).
+
+In the end I ended up with the circuitry down below; looks pretty complex but all it really does is take 3.3v In and boosts it using the mosfet circuitry you see on the left side to power itself up.
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/eeeeb1ea157bcba2_DzvpYL3CFZykAAAAAElFTkSuQmCC)
+
+*final schematic*
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b4999551a67e8722_A9ZellqtghfwAAAAAElFTkSuQmCC)
+
+Moving on I assigned everything temporary footprints (I hate assigning footprints), went with 0402s components and moved onto the actual PCB design.
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d0bb86fe26f8f7b6_zw24T4mFwIYAAAAASUVORK5CYII_)
+
+I started off with assigning some net classes and color coding them to get a better visual 
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/48e8921263174a7e_weXqATc5st4jwAAAABJRU5ErkJggg__)
+
+I then drew a rectangle using the dimensions of the E-Ink display just to get a sense of scale and see how I should place everything. (I didn't make a board edge layer yet)
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/eb8321d017807c6e_8TyG2rAAAAAElFTkSuQmCC)
+
+Started off with laying out the E-Ink circuitry as it was pretty easy
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1ece0b861686e43e_O_nE4to6JmwNSfpAPRXueuDkuWGYionTHYIaIiIgkjWUmIiIikjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREksZghoiIiCSNwQwRERFJGoMZIiIikjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREkpbQYOZ7T31J3EQB8DwtjecoPDxP4eF5WhrP0dLuabwN33vqS7in8TbxJvKRjGtJhrwqt7iRiIiISCoSmpkhIiIiSjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREksZghoiIiCSNwQwRERFJGoMZIiIikjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREksZghoiIiCSNwQwRERFJGoMZIiIikjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREksZghoiIiCSNwQwRERFJGoMZIiIikjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREksZghoiIiCSNwQwRERFJGoMZIiIikjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREksZghoiIiCSNwQwRERFJGoMZIiIikjQGM0RERCRpDGaIiIhI0hjMEBERkaQxmCEiIiJJYzBDREREksZghoiIiCSNwQwRERFJ2v8PjC3LiLRsbUsAAAAASUVORK5CYII_)
+
+And then moved onto the ESP32 which was way harder
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/bfbe93d9f6c22295_0AAAAAElFTkSuQmCC)
+
+The ESP32 pinout is questionable I would say. The 40Mhz crystal is like pretty close to the LNA pin and fitting the decoupling capacitors close is really hard when they are in 0402 package; which is why I'm considering switching to 0201s. But that's a job for tomorrow as I was pretty tired at this point.
+
+Here's how my final PCB look at the end of today
+
+![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/af4cad40c90a623d_w8NrOnxAbHMCgAAAABJRU5ErkJggg__)
+
+
+### Time Spent: 3 Hours
+
