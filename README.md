@@ -1,20 +1,20 @@
 # ESP32 E-INK Board
 
-A tiny E-Ink display driver board that features an ESP32-C3 and a battery charging IC on board. 
+A tiny E-Ink display driver board featuring an ESP32-C3 and an onboard battery charging IC. It wirelessly drives a 2.13-inch E-Ink display and is designed for portable, ultra-low-power projects such as status displays, or dashboards.
 
 
-![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/c52db52a48045378_iuPIQpreQi8AAAAASUVORK5CYII_)
+![image](https://cdn.2008000.xyz/cdn/01-02-2026%2F92227910_image.png)
 
 
 ---
 ## Schematic
 
-![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/4af4e2b4d20b6744_gFAAAAAABAGMIvAAAAAAAAwvgfCKWceEjC6pQAAAAASUVORK5CYII_)
+![image](https://cdn.2008000.xyz/cdn/01-02-2026%2F255d5688_image.png)
 
 ---
 ## PCB
 
-![image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a06b86fb6e8f03a0_JQ5t3KjeCAAAAAAAAMuu8YowAAAAAAAAWFYGYQAAAAAAAGTJIAwAAAAAAIAsGYQBAAAAAACQJYMwAAAAAAAAsmQQBgAAAAAAQJYMwgAAAAAAAMiSQRgAAAAAAABZMggDAAAAAAAgSwZhAAAAAAAAZMkgDAAAAAAAgCwZhAEAAAAAAJAlgzAAAAAAAACy9P_AYAUE6Z9VVwAAAABJRU5ErkJggg__)
+![image](https://cdn.2008000.xyz/cdn/01-02-2026%2F94bac8eb_image.png)
 
 
 ---

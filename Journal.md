@@ -147,4 +147,4 @@ I also made a few changes such as switching to a smaller footprint crystals, and
 This was pretty much it for this project, after finishing the PCB I spent some time on LCSC making a cart and then setting up the repository for this project.
 
 
-## Time Spent: 
+## Time Spent:  7.5 Hours
