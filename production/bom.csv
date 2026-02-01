@@ -7,7 +7,7 @@
 "C10,C11","2","Capacitor_SMD:C_0402_1005Metric","17pF","C1517782"
 "C12,C13","2","Capacitor_SMD:C_0402_1005Metric","10pF","C76946"
 "C14,C15","2","Capacitor_SMD:C_0201_0603Metric","1.2pF","C85895"
-"C31,C32","2","Capacitor_SMD:C_0402_1005Metric","4.7uF","C23733"
+"C31,C32","2","Capacitor_SMD:C_0402_1005Metric","4.7uF","C6119795"
 "D1,D2,D3","3","Diode_SMD:D_SOD-123","MBR0530","C82046"
 "D4,D5","2","LED_SMD:LED_0402_1005Metric","LED","C30584803"
 "H1,H2","2","MountingHole:MountingHole_2.2mm_M2","MountingHole","-"
